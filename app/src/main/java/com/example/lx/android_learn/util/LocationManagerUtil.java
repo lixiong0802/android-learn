@@ -13,7 +13,7 @@ import android.location.LocationManager;
  */
 public class LocationManagerUtil {
 
-    private boolean isConnectEnable(Activity activity, String context) {
+    private boolean isConnectEnable(Context activity, String context) {
 
         LocationManager locationManager = (LocationManager) activity.getSystemService(Context.LOCATION_SERVICE);
 
@@ -23,12 +23,12 @@ public class LocationManagerUtil {
 
     }
 
-    public boolean isGpsEnable(Activity activity) {
+    public boolean isGpsEnable(Context activity) {
 
         return isConnectEnable(activity, LocationManager.GPS_PROVIDER);
     }
 
-    public boolean isNetWorkEnable(Activity activity) {
+    public boolean isNetWorkEnable(Context activity) {
 
         return isConnectEnable(activity, LocationManager.NETWORK_PROVIDER);
     }

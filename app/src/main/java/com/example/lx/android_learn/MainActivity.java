@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button btn_Simpel_ListView;
 
+    private Button btn_Web_View;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_Simpel_ListView = (Button) this.findViewById(R.id.btn_Simpel_ListView);
         btn_Simpel_ListView.setOnClickListener(this);
 
+        btn_Web_View = (Button) this.findViewById(R.id.btn_Web_View);
+        btn_Web_View.setOnClickListener(this);
+
+
     }
 
     @Override
@@ -64,6 +70,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (v == btn_Simpel_ListView) {
             Intent intent = new Intent(this, ControlListView.class);
+            startActivity(intent);
+        }
+
+        if (v == btn_Web_View) {
+            Intent intent = new Intent(this, ControlWebView.class);
             startActivity(intent);
         }
 

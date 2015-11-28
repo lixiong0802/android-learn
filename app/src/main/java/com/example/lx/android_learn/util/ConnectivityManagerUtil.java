@@ -22,7 +22,7 @@ public class ConnectivityManagerUtil {
      * @return
      */
 
-    public static boolean isNewWorkConnected(Activity activity) {
+    public static boolean isNewWorkConnected(Context activity) {
 
         ConnectivityManager connMgr = (ConnectivityManager) activity.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
