@@ -25,8 +25,9 @@
         <activity android:name=".ControlLinearlayoutActivity" />
         <activity android:name=".ControlTablelayoutActivity" />
         <activity android:name=".ControlRelativelayoutActivity" />
-        <activity android:name=".ControlTextViewActivity"></activity>
-        <activity android:name=".ControlTextView1Activity"></activity>
+        <activity android:name=".ControlTextViewActivity" />
+        <activity android:name=".ControlTextView1Activity" />
+        <activity android:name=".LoginUIActivity"></activity>
     </application>
 
 </manifest>

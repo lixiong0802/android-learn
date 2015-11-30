@@ -33,6 +33,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private Button btn_textView1;
 
+    private Button btn_login;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +66,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         btn_textView1 = (Button) this.findViewById(R.id.btn_textView1);
         btn_textView1.setOnClickListener(this);
+
+        btn_login = (Button) this.findViewById(R.id.btn_login);
+        btn_login.setOnClickListener(this);
 
 
     }
@@ -103,6 +108,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         if (v == btn_textView1) {
             Intent intent = new Intent(this, ControlTextView1Activity.class);
+            startActivity(intent);
+        }
+        if (v == btn_login) {
+            Intent intent = new Intent(this, LoginUIActivity.class);
             startActivity(intent);
         }
     }

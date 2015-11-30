@@ -78,4 +78,11 @@
         android:layout_height="wrap_content"
         android:text="测试简单textView1" />
 
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试简单btn_login" />
+
 </LinearLayout>
