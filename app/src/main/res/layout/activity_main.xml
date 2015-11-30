@@ -53,11 +53,29 @@
         android:text="测试简单WebView" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="right"
         android:text="Large Text"
-        android:id="@+id/textView"
-        android:layout_gravity="right" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试简单image" />
+
+    <Button
+        android:id="@+id/btn_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试简单textView" />
+
+    <Button
+        android:id="@+id/btn_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试简单textView1" />
 
 </LinearLayout>

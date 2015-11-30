@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lx.android_learn">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +20,13 @@
         <activity android:name=".IntentActivity" />
         <activity android:name=".DataIntentActivity" />
         <activity android:name=".ControlListView" />
-        <activity android:name=".ControlWebView"></activity>
+        <activity android:name=".ControlWebView" />
+        <activity android:name=".ControlImageActivity" />
+        <activity android:name=".ControlLinearlayoutActivity" />
+        <activity android:name=".ControlTablelayoutActivity" />
+        <activity android:name=".ControlRelativelayoutActivity" />
+        <activity android:name=".ControlTextViewActivity"></activity>
+        <activity android:name=".ControlTextView1Activity"></activity>
     </application>
 
 </manifest>

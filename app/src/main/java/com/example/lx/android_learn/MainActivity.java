@@ -1,7 +1,7 @@
 package com.example.lx.android_learn;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     public final static String EXTRA_MESSAGE = "com.example.lx.android_learn.MESSAGE";
 
@@ -26,6 +26,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_Simpel_ListView;
 
     private Button btn_Web_View;
+
+    private Button btn_image;
+
+    private Button btn_textView;
+
+    private Button btn_textView1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +55,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_Web_View = (Button) this.findViewById(R.id.btn_Web_View);
         btn_Web_View.setOnClickListener(this);
+
+        btn_image = (Button) this.findViewById(R.id.btn_image);
+        btn_image.setOnClickListener(this);
+
+        btn_textView = (Button) this.findViewById(R.id.btn_textView);
+        btn_textView.setOnClickListener(this);
+
+        btn_textView1 = (Button) this.findViewById(R.id.btn_textView1);
+        btn_textView1.setOnClickListener(this);
 
 
     }
@@ -78,5 +93,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
 
+        if (v == btn_image) {
+            Intent intent = new Intent(this, ControlImageActivity.class);
+            startActivity(intent);
+        }
+        if (v == btn_textView) {
+            Intent intent = new Intent(this, ControlTextViewActivity.class);
+            startActivity(intent);
+        }
+        if (v == btn_textView1) {
+            Intent intent = new Intent(this, ControlTextView1Activity.class);
+            startActivity(intent);
+        }
     }
 }
