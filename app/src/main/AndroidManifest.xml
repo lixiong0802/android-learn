@@ -27,7 +27,10 @@
         <activity android:name=".ControlRelativelayoutActivity" />
         <activity android:name=".ControlTextViewActivity" />
         <activity android:name=".ControlTextView1Activity" />
-        <activity android:name=".LoginUIActivity"></activity>
+        <activity android:name=".LoginUIActivity" />
+        <activity android:name=".ControlExampleActivity" />
+        <activity android:name=".ControlTabhostActivity" />
+        <activity android:name=".AlertDialogActivity"></activity>
     </application>
 
 </manifest>

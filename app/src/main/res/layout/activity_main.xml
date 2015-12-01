@@ -1,88 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical"
     tools:context="com.example.lx.android_learn.MainActivity">
-
-    <Button
-        android:id="@+id/btn_Click"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="亲，点击下我" />
-
-    <Button
-        android:id="@+id/btn_IntentActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="测试跳转Activity" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/txt_dataIntent"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_DataIntentActivity"
+            android:id="@+id/btn_Click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亲，点击下我" />
+
+        <Button
+            android:id="@+id/btn_IntentActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="测试跳转Activity" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txt_dataIntent"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_DataIntentActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试跳转Activity" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Simpel_ListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单ListView" />
+
+        <Button
+            android:id="@+id/btn_Web_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单WebView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单image" />
+
+        <Button
+            android:id="@+id/btn_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单textView" />
+
+        <Button
+            android:id="@+id/btn_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单textView1" />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单btn_login" />
+
+        <Button
+            android:id="@+id/btn_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单btn_control" />
+
+        <Button
+            android:id="@+id/btn_tabhost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单btn_tabhost" />
+
+        <Button
+            android:id="@+id/btn_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单Dialog" />
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_Simpel_ListView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="测试简单ListView" />
-
-    <Button
-        android:id="@+id/btn_Web_View"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="测试简单WebView" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/btn_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="测试简单image" />
-
-    <Button
-        android:id="@+id/btn_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="测试简单textView" />
-
-    <Button
-        android:id="@+id/btn_textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="测试简单textView1" />
-
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="测试简单btn_login" />
-
-</LinearLayout>
+</ScrollView>

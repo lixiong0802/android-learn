@@ -35,6 +35,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private Button btn_login;
 
+    private Button btn_control;
+
+    private Button btn_tabhost;
+
+    private Button btn_dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +76,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btn_login = (Button) this.findViewById(R.id.btn_login);
         btn_login.setOnClickListener(this);
 
+        btn_control = (Button) this.findViewById(R.id.btn_control);
+        btn_control.setOnClickListener(this);
+
+        btn_tabhost = (Button) this.findViewById(R.id.btn_tabhost);
+        btn_tabhost.setOnClickListener(this);
+
+        btn_dialog = (Button) this.findViewById(R.id.btn_dialog);
+        btn_dialog.setOnClickListener(this);
 
     }
 
@@ -112,6 +126,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         if (v == btn_login) {
             Intent intent = new Intent(this, LoginUIActivity.class);
+            startActivity(intent);
+        }
+        if (v == btn_control) {
+            Intent intent = new Intent(this, ControlExampleActivity.class);
+            startActivity(intent);
+        }
+        if (v == btn_tabhost) {
+            Intent intent = new Intent(this, ControlTabhostActivity.class);
+            startActivity(intent);
+        }
+        if (v == btn_dialog) {
+            Intent intent = new Intent(this, AlertDialogActivity.class);
             startActivity(intent);
         }
     }
