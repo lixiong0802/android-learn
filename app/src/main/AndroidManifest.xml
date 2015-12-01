@@ -30,7 +30,9 @@
         <activity android:name=".LoginUIActivity" />
         <activity android:name=".ControlExampleActivity" />
         <activity android:name=".ControlTabhostActivity" />
-        <activity android:name=".AlertDialogActivity"></activity>
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".OptionsMenuActivity" />
+        <activity android:name=".IntentResultActivity"></activity>
     </application>
 
 </manifest>

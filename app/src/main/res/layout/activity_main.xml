@@ -106,6 +106,19 @@
             android:layout_height="wrap_content"
             android:text="测试简单Dialog" />
 
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单Menu" />
+
+        <Button
+            android:id="@+id/btn_goIntent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试简单Intent数据测试" />
+
+
     </LinearLayout>
 
 </ScrollView>

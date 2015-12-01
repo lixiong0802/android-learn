@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.lx.android_learn.model.User;
+
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -40,6 +42,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button btn_tabhost;
 
     private Button btn_dialog;
+
+    private Button btn_menu;
+
+    private Button btn_goIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,6 +90,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         btn_dialog = (Button) this.findViewById(R.id.btn_dialog);
         btn_dialog.setOnClickListener(this);
+
+        btn_menu = (Button) this.findViewById(R.id.btn_menu);
+        btn_menu.setOnClickListener(this);
+
+        btn_goIntent = (Button) this.findViewById(R.id.btn_goIntent);
+        btn_goIntent.setOnClickListener(this);
 
     }
 
@@ -140,5 +152,26 @@ public class MainActivity extends Activity implements View.OnClickListener {
             Intent intent = new Intent(this, AlertDialogActivity.class);
             startActivity(intent);
         }
+        if (v == btn_menu) {
+            Intent intent = new Intent(this, OptionsMenuActivity.class);
+            startActivity(intent);
+        }
+
+        if (v == btn_goIntent) {
+            Intent intent = new Intent(this, IntentResultActivity.class);
+            User u = new User();
+            u.setName("lixiong");
+            u.setPwd("123456");
+            intent.putExtra("user", u);
+            intent.putExtra("text", "text");
+            startActivityForResult(intent, 11);
+        }
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        Toast.makeText(this, "requestCode:" + requestCode + ",resultCode:" + resultCode + "result:" + intent.getStringExtra("result"), Toast.LENGTH_LONG).show();
+        super.onActivityResult(requestCode, resultCode, intent);
+    }
+
 }
