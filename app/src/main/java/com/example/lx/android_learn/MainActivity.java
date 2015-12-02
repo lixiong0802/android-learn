@@ -2,6 +2,7 @@ package com.example.lx.android_learn;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,6 +47,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button btn_menu;
 
     private Button btn_goIntent;
+
+    private Button btn_simpleUserCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,6 +100,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btn_goIntent = (Button) this.findViewById(R.id.btn_goIntent);
         btn_goIntent.setOnClickListener(this);
 
+        btn_simpleUserCount = (Button) this.findViewById(R.id.btn_simpleUserCount);
+        btn_simpleUserCount.setOnClickListener(this);
     }
 
     @Override
@@ -154,6 +159,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         if (v == btn_menu) {
             Intent intent = new Intent(this, OptionsMenuActivity.class);
+            startActivity(intent);
+        }
+        if (v == btn_simpleUserCount) {
+            Intent intent = new Intent(this, UserCountActivity.class);
             startActivity(intent);
         }
 

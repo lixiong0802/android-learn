@@ -32,7 +32,8 @@
         <activity android:name=".ControlTabhostActivity" />
         <activity android:name=".AlertDialogActivity" />
         <activity android:name=".OptionsMenuActivity" />
-        <activity android:name=".IntentResultActivity"></activity>
+        <activity android:name=".IntentResultActivity" />
+        <activity android:name=".UserCountActivity"></activity>
     </application>
 
 </manifest>
