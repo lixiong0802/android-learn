@@ -33,7 +33,15 @@
         <activity android:name=".AlertDialogActivity" />
         <activity android:name=".OptionsMenuActivity" />
         <activity android:name=".IntentResultActivity" />
-        <activity android:name=".UserCountActivity"></activity>
+        <activity android:name=".UserCountActivity" />
+
+        <service android:name=".service.FirstService">
+            <intent-filter>
+                <action android:name="com.example.lx.android_learn.service.FirstService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ServicestartActivity"></activity>
     </application>
 
 </manifest>

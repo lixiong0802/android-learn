@@ -50,6 +50,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private Button btn_simpleUserCount;
 
+    private Button btn_service;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,6 +104,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         btn_simpleUserCount = (Button) this.findViewById(R.id.btn_simpleUserCount);
         btn_simpleUserCount.setOnClickListener(this);
+
+        btn_service = (Button) this.findViewById(R.id.btn_service);
+        btn_service.setOnClickListener(this);
     }
 
     @Override
@@ -163,6 +168,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         if (v == btn_simpleUserCount) {
             Intent intent = new Intent(this, UserCountActivity.class);
+            startActivity(intent);
+        }
+        if (v == btn_service) {
+            Intent intent = new Intent(this, ServicestartActivity.class);
             startActivity(intent);
         }
 
