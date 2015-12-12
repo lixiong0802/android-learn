@@ -41,7 +41,15 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".ServicestartActivity"></activity>
+        <service android:name=".service.BindSerivce">
+            <intent-filter>
+                <action android:name="com.example.lx.android_learn.service.BindSerivce" />
+            </intent-filter>
+        </service>
+
+
+        <activity android:name=".ServicestartActivity" />
+        <activity android:name=".ServiceDemoActivity"></activity>
     </application>
 
 </manifest>
